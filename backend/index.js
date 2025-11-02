@@ -19,8 +19,8 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
   origin:['https://shopeaseone.onrender.com',
-    'http://localhost:5174',
-    'http://localhost:5175'
+    'https://shopeaseonee.onrender.com',
+
     ],
   credentials:true
 }))
