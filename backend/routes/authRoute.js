@@ -7,7 +7,7 @@ const authRoute=express.Router();
 
 authRoute.post('/registration',registration)
 authRoute.post('/login',login);
-authRoute.get('/logout',logout)
+authRoute.post('/logout',logout)
 authRoute.post('/gooleLogin',googleLogin);
 
 authRoute.post('/adminLogin',adminLogin);
