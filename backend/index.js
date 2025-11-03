@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
   origin:['https://shopeaseone.onrender.com',
-'https://adminshop0.netlify.app'
+'https://c-commerce-admin-panel0.onrender.com'
     ],
   credentials:true
 }))
