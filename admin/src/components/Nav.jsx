@@ -39,7 +39,7 @@ const handlelogout=async()=>{
     </h1> </div>
   <button
     onClick={handlelogout}
-    className="text-[15px] bg-[#119de3] hover:bg-[#0cb3ea] text-white px-5 py-2 rounded-lg border-2 border-transparent hover:border-[#0cb3ea] transition-all duration-300"
+    className="text-[15px] bg-[#119de3] hover:bg-[#0cb3ea] text-white  cursor-pointer px-5 py-2 rounded-lg border-2 border-transparent hover:border-[#0cb3ea] transition-all duration-300"
   >
     Logout
   </button>
