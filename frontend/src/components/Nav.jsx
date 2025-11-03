@@ -150,6 +150,19 @@ const handleLogout = async () => {
         >
           Orders
         </li>
+        <li
+  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+>
+  <a
+    href="https://c-commerce-admin-panel0.onrender.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block w-full h-full"
+  >
+    Admin
+  </a>
+</li>
+
       </ul>
     </div>
   )}
