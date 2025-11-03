@@ -16,7 +16,7 @@ const navigate=useNavigate();
 
 const handlelogout=async()=>{
   try {
-    const result=await axios.get(serverUrl +'/api/auth/logout',{
+    const result=await axios.post(serverUrl +'/api/auth/logout',{
       withCredentials:true
     })
 
