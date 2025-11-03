@@ -90,7 +90,7 @@ const getProducts=async()=>{
       setCartItem(result.data)
     } catch (error) {
       console.log(error)
-      toast.error(error.message)
+    
     }
   }
 
