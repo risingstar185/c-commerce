@@ -3,7 +3,7 @@ import React, { createContext } from 'react';
 export const AuthDataContext = createContext();
 
 const AuthContext = ({ children }) => {
-  const serverUrl = 'https://shopeaseone.onrender.com';
+  const serverUrl = "https://shopeasee-hdpj.onrender.com";
   const value = { serverUrl };
 
   return (
