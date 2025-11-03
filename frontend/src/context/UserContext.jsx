@@ -14,7 +14,6 @@ export const UserProvider = ({ children }) => {
     try {
       const result = await axios.get(serverUrl + '/api/user/getCurrentUser', { withCredentials: true });
       setUserData(result.data);
-      console.log(result.data);
     } catch (error) {
       setUserData(null);
       console.log(error);
