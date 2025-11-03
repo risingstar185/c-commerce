@@ -24,22 +24,25 @@ const Nav = () => {
 
   const { serverUrl } = useContext(AuthDataContext)
   
-  const handleLogout = async () => {
-    try {
-      const result = await axios.get(serverUrl + '/api/auth/logout',
+const handleLogout = async () => {
+  try {
+    const result = await axios.post(
+      `${serverUrl}/api/auth/logout`,
+      {},
+      { withCredentials: true }
+    );
 
-        { withCredentials: true }
-      )
-      getCurrentUser();
-      toast.success('User Logout successfully😒')
-      navigate('/login')
-      console.log(result.data)
+    toast.success('User logged out successfully 😒');
 
-    } catch (error) {
-      console.error(error)
-      toast.error('logout error:Please try again later.')
-    }
+    // Optional: refresh the page to clear any stale data
+    window.location.href = '/login';
+
+    console.log(result.data);
+  } catch (error) {
+    console.error('Logout error:', error);
+    toast.error('Logout error: Please try again later.');
   }
+};
   return (
     <div className="w-full h-[70px] bg-[#ecfafaec] z-10 fixed top-0 flex items-center justify-between px-[30px] shadow-md shadow-black">
   {/* --- Left Logo Section --- */}
