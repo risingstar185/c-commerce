@@ -22,7 +22,7 @@ const getProducts=async()=>{
   try {
     let result=await axios.get(serverUrl +
       '/api/product/list')
-      console.log(result.data)
+    
       setProduct(result.data)
   } catch (error) {
     console.error('fetching list error',error)
